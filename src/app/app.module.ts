@@ -7,17 +7,31 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Imported by no-fishi
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatCardModule    } from '@angular/material/card';
+import { MainNavComponent } from './components/main-nav/main-nav.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MainNavComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     // Imported by no-fishi
-    MatToolbarModule
+    MatToolbarModule,
+    MatCardModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule,
+    RouterModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
