@@ -5,23 +5,35 @@ html, body {
 }
 
 body {
-  margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
-  background-color: white;
+  margin            : 0;
+  font-family       : Roboto, "Helvetica Neue", sans-serif;
+  background-color  : white;
+  background-image  : url(./assets/bg_image.jpg);
+  background-size   : 100%;
+  background-repeat : repeat-y;
 }
 
 /* mat-toolbar styles */
-/*
 mat-toolbar {
-  color            : white;
-  background-color : rgba(0, 0, 0, 0.4);
+  color         : white;
+  background    : rgba(0, 0, 0, 0.4);
 }
-*/
+
 
 /* mat-tab styles */
 mat-tab-group {
   background-color : transparent;
   height           : 100%;
+  /* border-top       : 1px solid; */
+  /* border-color     : white;     */
+}
+/* */
+::ng-deep .mat-mdc-tab-header .mdc-tab {
+  background : rgba(0, 0, 0, 0.4);
+}
+::ng-deep .mat-mdc-tab .mdc-tab__text-label,
+::ng-deep .mat-mdc-tab-link .mdc-tab__text-lable {
+  color      : white;
 }
 
 /* mat-card styles */
