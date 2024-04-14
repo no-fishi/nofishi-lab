@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: white;
+}
+
+/* mat-toolbar styles */
+/*
+mat-toolbar {
+  color            : white;
+  background-color : rgba(0, 0, 0, 0.4);
+}
+*/
+
+/* mat-tab styles */
+mat-tab-group {
+  background-color : transparent;
+  height           : 100%;
+}
+
+/* mat-card styles */
+mat-card {
+  color        : white;
+  background   : rgba(0, 0, 0, 0.4);
+  margin-right : 20%;
+  margin-left  : 20%;
+}
