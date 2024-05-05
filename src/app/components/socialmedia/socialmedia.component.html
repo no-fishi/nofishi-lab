@@ -1,0 +1,38 @@
+
+<div>
+  This is socialmedia component!
+</div>
+
+<div style = "margin-left: 20%; margin-top: 1%; margin-bottom: 1%;">
+  <!-- Button of Deviantart -->
+  <button mat-icon-button color = "accent" (click) = "showLinkPreviewData( 'deviantart' )">
+    <ng-icon name = "simpleDeviantart" color = "#05CC47"></ng-icon>
+  </button>
+  <!-- Button of Bluesky -->
+  <button mat-icon-button color = "accent" (click) = "showLinkPreviewData( 'bluesky' )">
+    <ng-icon name = "simpleBluesky" color = "#0285FF"></ng-icon>
+  </button>
+  <!-- Button of X -->
+  <button mat-icon-button color = "accent" (click) = "showLinkPreviewData( 'x' )">
+    <ng-icon name = "simpleX" color = "white"></ng-icon>
+  </button>
+  <!-- Button of GitHub -->
+  <button mat-icon-button color = "accent" (click) = "showLinkPreviewData( 'github' )">
+    <ng-icon name = "simpleGithub" color = "white"></ng-icon>
+  </button>
+</div>
+
+  <div class="test">
+  <mat-card class="test">
+    <mat-card-header *ngIf="!sleep">
+      <div mat-card-avatar style="background-image: url({{linkImage}}); background-size: cover; height: 80px; width: 80px;"></div>
+      <mat-card-title>{{linkTitle}}</mat-card-title>
+      <mat-card-subtitle>{{linkDescription}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content *ngIf="!sleep">
+      <a style="color: #15F5BA; font-weight: bold;" href={{linkUrl}}>{{linkUrl}}</a>
+    </mat-card-content>
+    <mat-spinner *ngIf="sleep" color="accent" style="position: relative; margin-left: 50%;"></mat-spinner>
+  </mat-card>
+  <!-- Spinner whlist fetching link preview -->
+  </div>

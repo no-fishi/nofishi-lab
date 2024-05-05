@@ -27,19 +27,44 @@ mat-tab-group {
   /* border-top       : 1px solid; */
   /* border-color     : white;     */
 }
-/* */
+
+/* Tabs header background */
+/* Ref.: https://www.youtube.com/watch?v=TboXxcVVGyw */
 ::ng-deep .mat-mdc-tab-header .mdc-tab {
   background : rgba(0, 0, 0, 0.4);
 }
+
+/* Tabs text colour */
+/* Ref.: https://www.youtube.com/watch?v=TboXxcVVGyw */
 ::ng-deep .mat-mdc-tab .mdc-tab__text-label,
 ::ng-deep .mat-mdc-tab-link .mdc-tab__text-lable {
-  color      : white;
+  color : white;
 }
 
-/* mat-card styles */
+/* mat-card (in main page) styles */
 mat-card {
   color        : white;
   background   : rgba(0, 0, 0, 0.4);
   margin-right : 20%;
   margin-left  : 20%;
+}
+
+/* mat-card (in social media) styles */
+mat-card-socialmedia {
+  color        : white;
+  background   : rgba(0, 0, 0, 0.4);
+  margin-right : 60%;
+  margin-left  : 60%;
+}
+
+/* social media button styles */
+button {
+  background-color : rgb(0,0,0,0.4);
+  margin-left      : 2%;
+  margin-left      : 2%;
+}
+
+/**/
+test {
+  color : green;
 }
